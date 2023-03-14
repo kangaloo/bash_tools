@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-base=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
+lib_base=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
 
-for i in "${base}"/*/*.sh; do
+for i in "${lib_base}"/*/*.sh; do
     source $i
 done
-unset base
+unset lib_base
